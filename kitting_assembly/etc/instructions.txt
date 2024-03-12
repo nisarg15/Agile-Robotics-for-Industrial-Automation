@@ -1,0 +1,11 @@
+in 4 different terminals run the following:
+
+ros2 launch ariac_gazebo ariac.launch.py trial_name:=rwa3 competitor_pkg:=group2
+ros2 launch ariac_moveit_config ariac_robots_moveit.launch.py
+ros2 run group2 zoro.py
+ros2 launch group2 competitor.launch.py
+
+note: for "ros2 launch group2 competitor.launch.py", launch the terminal after the competition is ready to start for consistent results
+
+note2: sometimes picking up the part is slow, please be patient, as you will definitely see the robot making multiple attempts to pick it up, and with each attempt it gets closer
+
